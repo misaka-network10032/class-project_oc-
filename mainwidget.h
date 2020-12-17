@@ -5,6 +5,8 @@
 #include <QStackedLayout>
 #include "menu.h"
 #include "word.h"
+#include "use.h"
+#include "oh.h"
 
 namespace Ui {
 class MainWidget;
@@ -22,6 +24,8 @@ private:
     Ui::MainWidget *ui;
     Menu *menuwidget;
     word *wordwidget;
+    use  *usewidget;
+    OH   *ohwidget;
     QStackedLayout *stacklayout;
 };
 

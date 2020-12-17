@@ -6,9 +6,16 @@ Menu::Menu(QWidget *parent) :
     ui(new Ui::Menu)
 {
     ui->setupUi(this);
+    ui->tablewidget->setStyleSheet("QTableWidget{border-image:url(:/new/prefix1/w1.jpg);}");
     menubuttongroup=new QButtonGroup;
     menubuttongroup->addButton(ui->cet4button,0);
     menubuttongroup->addButton(ui->GREbutton,1);
+    ui->tablewidget->setColumnCount(3);
+    QStringList headerLabels;
+    headerLabels<<tr("用户名")<<tr("cet完成度")<<tr("gre完成度");
+    ui->tablewidget->setHorizontalHeaderLabels(headerLabels);
+    ui->tablewidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    setui();
 }
 
 Menu::~Menu()
@@ -190,6 +197,7 @@ void Menu::on_startbutton_clicked()
     if(temp.size()==0)
     {
         QMessageBox::about(NULL, "反馈", "太棒了，你已经掌握了词库的所有单词");
+        emit display(3);
         return;
     }
     QFile n_file(tname);
@@ -227,6 +235,7 @@ void Menu::on_startbutton_clicked()
     inq<<s<<endl;
     inq<<name;
     num.close();
+    QMessageBox::about(NULL,"反馈","设置保存成功！");
     emit display(1);
 }
 
@@ -297,9 +306,23 @@ void Menu::on_newbutton_clicked()
     }
     tfile.close();
     QMessageBox::about(NULL,"反馈","新建成功");
+    setui();
 }
 
 void Menu::on_endbutton_clicked()
 {
     QApplication::exit();
+}
+
+
+void Menu::on_rebutton_clicked()
+{
+    setui();
+    QMessageBox::about(NULL,"反馈","刷新成功！");
+}
+
+
+void Menu::on_betubutton_clicked()
+{
+    emit display(2);
 }

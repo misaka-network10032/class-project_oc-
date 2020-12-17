@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>654</width>
-    <height>514</height>
+    <width>826</width>
+    <height>451</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QLabel" name="selectlabel">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>120</y>
+     <x>90</x>
+     <y>180</y>
      <width>121</width>
      <height>21</height>
     </rect>
@@ -29,8 +29,8 @@
   <widget class="QRadioButton" name="cet4button">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>150</y>
+     <x>90</x>
+     <y>210</y>
      <width>115</width>
      <height>19</height>
     </rect>
@@ -42,11 +42,14 @@
   <widget class="QRadioButton" name="GREbutton">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>150</y>
+     <x>240</x>
+     <y>210</y>
      <width>115</width>
      <height>19</height>
     </rect>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
    <property name="text">
     <string>GRE</string>
@@ -55,8 +58,8 @@
   <widget class="QLineEdit" name="numlineEdit">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>210</y>
+     <x>270</x>
+     <y>280</y>
      <width>113</width>
      <height>21</height>
     </rect>
@@ -65,8 +68,8 @@
   <widget class="QLabel" name="numlabel">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>200</y>
+     <x>90</x>
+     <y>260</y>
      <width>161</width>
      <height>51</height>
     </rect>
@@ -78,21 +81,24 @@
   <widget class="QPushButton" name="startbutton">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>280</y>
-     <width>93</width>
-     <height>28</height>
+     <x>160</x>
+     <y>350</y>
+     <width>131</width>
+     <height>31</height>
     </rect>
    </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
    <property name="text">
-    <string>开始练习！</string>
+    <string>保存设置</string>
    </property>
   </widget>
   <widget class="QPushButton" name="endbutton">
    <property name="geometry">
     <rect>
-     <x>410</x>
-     <y>380</y>
+     <x>700</x>
+     <y>410</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -104,8 +110,8 @@
   <widget class="QLabel" name="userlabel">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>40</y>
+     <x>90</x>
+     <y>100</y>
      <width>121</width>
      <height>21</height>
     </rect>
@@ -117,8 +123,8 @@
   <widget class="QLineEdit" name="namelineEdit">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>70</y>
+     <x>90</x>
+     <y>130</y>
      <width>113</width>
      <height>21</height>
     </rect>
@@ -127,14 +133,53 @@
   <widget class="QPushButton" name="newbutton">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>70</y>
+     <x>280</x>
+     <y>130</y>
      <width>93</width>
      <height>28</height>
     </rect>
    </property>
    <property name="text">
     <string>新建。。。</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tablewidget">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>10</y>
+     <width>321</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="rebutton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>刷新</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="betubutton">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>410</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>觉得界面丑？点此美化</string>
    </property>
   </widget>
  </widget>

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>598</width>
-    <height>501</height>
+    <width>925</width>
+    <height>441</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,11 +16,14 @@
   <widget class="QLabel" name="wordlabel">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>140</y>
-     <width>71</width>
-     <height>41</height>
+     <x>320</x>
+     <y>120</y>
+     <width>481</width>
+     <height>101</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 26pt &quot;Times New Roman&quot;;</string>
    </property>
    <property name="text">
     <string>mikoto</string>
@@ -29,8 +32,8 @@
   <widget class="QPushButton" name="knowpushButton">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>260</y>
+     <x>290</x>
+     <y>250</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -42,8 +45,8 @@
   <widget class="QPushButton" name="unknownbutton">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>260</y>
+     <x>400</x>
+     <y>250</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -55,8 +58,8 @@
   <widget class="QPushButton" name="skipbutton">
    <property name="geometry">
     <rect>
-     <x>300</x>
-     <y>260</y>
+     <x>500</x>
+     <y>250</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -68,7 +71,7 @@
   <widget class="QPushButton" name="returnbutton">
    <property name="geometry">
     <rect>
-     <x>390</x>
+     <x>600</x>
      <y>370</y>
      <width>93</width>
      <height>28</height>
@@ -81,7 +84,7 @@
   <widget class="QPushButton" name="startbutton">
    <property name="geometry">
     <rect>
-     <x>220</x>
+     <x>380</x>
      <y>80</y>
      <width>93</width>
      <height>28</height>

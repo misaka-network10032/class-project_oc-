@@ -97,7 +97,9 @@ void word::on_knowpushButton_clicked()
     {
         ui->wordlabel->setText("");
         QMessageBox::about(NULL,"反馈","没有单词了~");
+        emit display(0);
         return;
+
     }
     ui->wordlabel->setText(getword(getnumber()-1));
 }
@@ -124,6 +126,7 @@ void word::on_unknownbutton_clicked()
     {
         ui->wordlabel->setText("");
         QMessageBox::about(NULL,"反馈","没有单词了~");
+        emit display(0);
         return;
     }
     ui->wordlabel->setText(getword(getnumber()-1));
@@ -152,6 +155,7 @@ void word::on_skipbutton_clicked()
     {
         ui->wordlabel->setText("");
         QMessageBox::about(NULL,"反馈","没有单词了~");
+        emit display(0);
         return;
     }
     ui->wordlabel->setText(getword(getnumber()-1));

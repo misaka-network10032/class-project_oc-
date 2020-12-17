@@ -8,6 +8,8 @@
 #include <QDebug>
 #include <QTime>
 #include <QtGlobal>
+#include "menu.h"
+#include "ui_menu.h"
 
 namespace Ui {
 class word;
@@ -16,7 +18,6 @@ class word;
 class word : public QWidget
 {
     Q_OBJECT
-
 public:
     explicit word(QWidget *parent = nullptr);
     ~word();
